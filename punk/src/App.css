@@ -6,7 +6,7 @@
 /* Pages */
 .Home {
   color: white;
-  background-color: #121313;
+  background-color: #000000;
   margin: 10px;
   text-align: center;
 }
@@ -19,7 +19,7 @@
 /* App */
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-color: #000000;
 }
 #root {
   width: 100vw; /* Viewport width */
@@ -45,7 +45,7 @@
 
 }
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -55,7 +55,7 @@
   color: white;
 }
 .Navbar-Title {
-  font-family: "Tiny5", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2rem;
   color: #61dafb;
 }
@@ -69,9 +69,12 @@
   color: #61dafb;
 }
 .App-logo {
-  height: 2.5rem; /* Adjust to match your navbar height */
-  animation: sway 3s infinite ease-in-out;
+  height: 5rem; /* Adjust to match your navbar height */
   margin-right: 0.5rem; /* Optional: Adds space between logo and title */
+  filter: drop-shadow(0 0 10px rgb(168, 19, 19))  /* First glow layer */
+          drop-shadow(0 0 20px rgb(216, 216, 28))  /* Second glow layer */
+          drop-shadow(0 0 30px rgb(17, 27, 145)); /* Third glow layer */
+  animation: neonGlow 3.0s infinite alternate;
 }
 
 /* Animations */
@@ -81,6 +84,14 @@
   }
   50% {
     transform: rotate(10deg);
+  }
+}
+@keyframes neonGlow {
+  from {
+    filter: drop-shadow(0 0 2px rgb(255, 8, 218)) drop-shadow(0 0 10px rgb(235, 144, 9));
+  }
+  to {
+    filter: drop-shadow(0 0 4px rgb(35, 188, 253)) drop-shadow(0 0 15px #0ff);
   }
 }
 

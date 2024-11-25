@@ -4,13 +4,13 @@ import { useState } from 'react';
 
 
 function HomePage() {
-  const [showAbout, setShowAbout] = useState(false);
   return (
     <Container>
-    <body className='Home'>
-      <div className='Home-container'>
-        </div>
-    </body>
+      <body className='Home'>
+        <Stack direction="horizontal" gap={3}>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima expedita nesciunt sunt laboriosam nihil, ex soluta magni provident, porro a, cupiditate adipisci tenetur inventore dolores? Cum atque ducimus voluptatem labore?</p>
+        </Stack>
+      </body>
     </Container>
   );
 }
