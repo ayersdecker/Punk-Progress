@@ -1,0 +1,8 @@
+{
+    "dependencies": {
+      "annyang": "^2.6.1"
+    },
+    "devDependencies": {
+      "gh-pages": "^5.0.0"
+    }
+  }

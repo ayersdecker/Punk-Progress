@@ -1,0 +1,103 @@
+/* -- Fonts -- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tiny5&display=swap");
+/* -- Styles -- */
+/* Pages */
+.Home {
+  color: white;
+  background-color: #121313;
+  margin: 10px;
+  text-align: center;
+}
+
+
+
+
+
+
+/* App */
+.App {
+  text-align: center;
+  background-color: #282c34;
+}
+#root {
+  width: 100vw; /* Viewport width */
+  height: 100vh; /* Viewport height */
+  margin: 0; /* Remove default margin */
+  background-color: #000000;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content {
+  display: flex;
+  align-items: center;  /* Center vertically */
+  justify-content: center;  /* Center horizontally */
+  min-height: 100vh;  /* Full viewport height */
+  text-align: center;  /* Optional: centers text inside */
+
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.Navbar-Title {
+  font-family: "Tiny5", sans-serif;
+  font-size: 2rem;
+  color: #61dafb;
+}
+.footer {
+  color: white;
+  background-color: #000000;
+  padding: 1rem;
+  text-align: center;
+}
+.App-link {
+  color: #61dafb;
+}
+.App-logo {
+  height: 2.5rem; /* Adjust to match your navbar height */
+  animation: sway 3s infinite ease-in-out;
+  margin-right: 0.5rem; /* Optional: Adds space between logo and title */
+}
+
+/* Animations */
+@keyframes sway {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes bob {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
