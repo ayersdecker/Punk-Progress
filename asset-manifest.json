@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/Punk-Progress/static/css/main.3be38898.css",
-    "main.js": "/Punk-Progress/static/js/main.d6511c5d.js",
+    "main.js": "/Punk-Progress/static/js/main.18dd76b8.js",
     "static/js/453.e31ce6f5.chunk.js": "/Punk-Progress/static/js/453.e31ce6f5.chunk.js",
+    "static/media/pplogo.png": "/Punk-Progress/static/media/pplogo.5537f6e3d260b2cb336b.png",
     "index.html": "/Punk-Progress/index.html",
     "main.3be38898.css.map": "/Punk-Progress/static/css/main.3be38898.css.map",
-    "main.d6511c5d.js.map": "/Punk-Progress/static/js/main.d6511c5d.js.map",
+    "main.18dd76b8.js.map": "/Punk-Progress/static/js/main.18dd76b8.js.map",
     "453.e31ce6f5.chunk.js.map": "/Punk-Progress/static/js/453.e31ce6f5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3be38898.css",
-    "static/js/main.d6511c5d.js"
+    "static/js/main.18dd76b8.js"
   ]
 }
