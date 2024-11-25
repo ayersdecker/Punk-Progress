@@ -8,6 +8,8 @@ function HomePage() {
   return (
     <Container>
     <body className='Home'>
+      <div className='Home-container'>
+        </div>
     </body>
     </Container>
   );
