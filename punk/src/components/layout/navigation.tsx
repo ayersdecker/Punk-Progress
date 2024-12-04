@@ -2,8 +2,10 @@ import { Navbar, Container, Stack, Button, Nav, NavDropdown, DropdownDivider, Fo
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../../assets/pplogo.png';
 import '../../App.css';
-import TechnologyPage from '../pages/technology';
+import TechnologyPage from '../../pages/technology';
 import Layout from './layout';
+import {Link, Outlet, Route} from 'react-router-dom';
+import HomePage from '../../pages/home';
 
 
 function NavigationBar() {
@@ -19,10 +21,12 @@ function NavigationBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link onClick={() => handleSelect()}>Technology</Nav.Link>
-            <Nav.Link href="/sustainability">Sustainability</Nav.Link>
-            <Nav.Link href="/movements">Movements</Nav.Link>
+            <Link to="/" className='nav-link'>Home</Link>
+            <Link to="/technology" className='nav-link'>Technology</Link>
+            <Link to="/sustainability" className='nav-link'>Sustainability</Link>
+            <Link to="/movements" className='nav-link'>Movements</Link>
           </Nav>
+          <Outlet/>
           <Form  >
         <Stack direction='horizontal'>
             <Form.Control

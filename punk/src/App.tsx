@@ -1,11 +1,20 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Layout from './components/layout/layout';
-import HomePage from './components/pages/home';
+import HomePage from './pages/home';
+import TechnologyPage from './pages/technology';
+import SustainabilityPage from './pages/sustainability';
+import MovementsPage from './pages/movements';
 
 function App() {
   return (
     <Layout>
-      <HomePage/>
+      <Routes>
+        <Route index path="/" element={<HomePage/>}/>
+        <Route path="/technology" element={<TechnologyPage/>}/>
+        <Route path="/sustainability" element={<SustainabilityPage/>}/>
+        <Route path="/movements" element={<MovementsPage/>}/>
+      </Routes>
     </Layout>
   );
 }

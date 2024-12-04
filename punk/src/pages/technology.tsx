@@ -1,4 +1,4 @@
-import '../../App.css';
+import '../App.css';
 import { Stack, Container, Modal, Button } from 'react-bootstrap';
 import { useState } from 'react';
 
