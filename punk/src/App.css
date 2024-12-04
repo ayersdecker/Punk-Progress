@@ -6,7 +6,7 @@
 /* Pages */
 .Home {
   color: white;
-  background-color: #000000;
+  background-color: #00000000;
   margin: 10px;
   text-align: center;
 }
@@ -19,13 +19,12 @@
 /* App */
 .App {
   text-align: center;
-  background-color: #000000;
 }
 #root {
   width: 100vw; /* Viewport width */
   height: 100vh; /* Viewport height */
   margin: 0; /* Remove default margin */
-  background-color: #000000;
+  background-color: #3e3e3e;
 }
 .App-logo {
   height: 40vmin;
@@ -59,11 +58,22 @@
   font-size: 2rem;
   color: #61dafb;
 }
+.layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+}
+
+.content-wrapper {
+  flex: 1; /* Expands to take the available space */
+}
 .footer {
   color: white;
-  background-color: #000000;
+  background-color: #00000000;
   padding: 1rem;
+  flex: 0 0 auto; /* Prevents it from growing */
   text-align: center;
+  margin-top: auto; /* Pushes the footer to the bottom */
 }
 .App-link {
   color: #61dafb;

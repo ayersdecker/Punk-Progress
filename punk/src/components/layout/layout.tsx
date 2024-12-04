@@ -2,9 +2,11 @@ import Header from "./header";
 import Footer from "./footer";
 import '../../App.css';
 import { useState } from 'react';
+import { Container } from "react-bootstrap";
 
 export interface LayoutProps {
     children?: React.ReactNode;
+    LayoutType?: LayoutType;
   }
 
 export enum LayoutType {
@@ -18,15 +20,17 @@ export enum LayoutType {
 
 export default function Layout(props: LayoutProps, layoutTypeProp?: LayoutType): JSX.Element {
 
-  const [layoutType, setLayoutType] = useState<LayoutType>(layoutTypeProp ?? LayoutType.Default);
+  const [currentLayoutType, setCurrentLayoutType] = useState<LayoutType>(layoutTypeProp || LayoutType.Default);
 
   
     return (
-      <>
+      <div className="layout-wrapper">
           <Header/>
+          <Container fluid className="content-wrapper">
             {props.children}
+          </Container>
           <Footer/>
-      </>
+      </div>
     );
   }
 
