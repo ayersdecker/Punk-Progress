@@ -1,6 +1,6 @@
 import { Navbar, Container, Stack, Button, Nav, NavDropdown, DropdownDivider, Form, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from '../../assets/pplogo.png';
+import logo from '../../assets/img/pplogo.png';
 import '../../App.css';
 import TechnologyPage from '../../pages/technology';
 import Layout from './layout';
@@ -28,15 +28,7 @@ function NavigationBar() {
           </Nav>
           <Outlet/>
           <Form  >
-        <Stack direction='horizontal'>
-            <Form.Control
-              type="text"
-              placeholder="Search"
-              className=" mr-sm-2"
-              disabled
-            />
-            <Button type="submit" className='mx-2' disabled>Submit</Button>
-        </Stack>
+        
       </Form>
         </Navbar.Collapse>
       </Container>

@@ -22,9 +22,9 @@
 }
 #root {
   width: 100vw; /* Viewport width */
-  height: 100vh; /* Viewport height */
+  height: 100%; /* Viewport height */
   margin: 0; /* Remove default margin */
-  background-color: #3e3e3e;
+  background-color: #191919;
 }
 .App-logo {
   height: 40vmin;
@@ -86,6 +86,7 @@
           drop-shadow(0 0 30px rgb(17, 27, 145)); /* Third glow layer */
   animation: neonGlow 3.0s infinite alternate;
 }
+
 
 /* Animations */
 @keyframes sway {

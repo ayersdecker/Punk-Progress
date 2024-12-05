@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button, Card, Carousel } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const TechnologyPage: React.FC = () => {
   return (
@@ -24,7 +25,9 @@ const TechnologyPage: React.FC = () => {
                 <Card.Text>
                   Short description or excerpt from the article about {topic.toLowerCase()}.
                 </Card.Text>
-                <Button variant="outline-primary">Read More</Button>
+                <Button variant="outline-primary">
+                  <Link style={{textDecoration: 'none'}} to={`/technology/${topic.toLowerCase().replace(' ', '')}`}>Read More</Link>
+                </Button>
               </Card.Body>
             </Card>
           </Col>

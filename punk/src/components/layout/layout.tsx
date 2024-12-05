@@ -26,7 +26,7 @@ export default function Layout(props: LayoutProps, layoutTypeProp?: LayoutType):
     return (
       <div className="layout-wrapper">
           <Header/>
-          <Container fluid className="content-wrapper">
+          <Container className="content-wrapper">
             {props.children}
           </Container>
           <Footer/>
