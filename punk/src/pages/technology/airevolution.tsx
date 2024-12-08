@@ -49,14 +49,7 @@ function AiRevolutionPage() {
             &emsp;The future of AI holds immense promise. By harnessing the power of LLMs and modern AI responsibly, we can create a world where technology enhances human potential and drives innovation. From healthcare to education, finance to environmental conservation, AI is poised to transform every aspect of our lives. Embracing this technological revolution with a focus on ethical considerations will pave the way for a brighter and more equitable future.
           </p>
         </div>
-
-        {/* Conclusion */}
-        <div className="text-center" style={{ color: 'white' }}>
-          <h3>A Future of Promise</h3>
-          <p>
-            The rise of LLMs and AI holds immense potential to transform our world for the better. By harnessing this power responsibly, we can create a future where technology enhances humanity, driving innovation and equity.
-          </p>
-        </div>
+        <Button variant="primary" href="/technology" size='sm' style={{width:'300px'}}>Back to Technology Page</Button>
       </Stack>
     </Container>
   );

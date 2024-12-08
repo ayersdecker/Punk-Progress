@@ -1,36 +1,53 @@
-import '../App.css';
-import { Stack, Container, Row, Col, Button, Card, Carousel } from 'react-bootstrap';
+import React from 'react';
+import { Container, Row, Col, Button, Card} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
-function SustainabilityPage() {
+const SustainabilityPage: React.FC = () => {
   return (
-    <Container fluid className="py-5 bg-light">
-      <Stack direction="vertical" gap={4} className="Home">
-        {/* Hero Section */}
-          <h1 className="display-4 fw-bold" style={{ color: 'black' }}>Sustain the Future. Today.</h1>
-           <p className="lead" style={{ color: 'black' }}>Practical insights for a greener world.</p>
-
-        <Stack direction="horizontal" gap={3} className="justify-content-center">
+    <Container fluid className="py-5">
+      {/* Hero Section */}
+      <Row className="justify-content-center text-center mb-5">
+        <Col md={8}>
+          <h1 className="display-4 fw-bold text-white">Sustain the Future. Today.</h1>
+          <p className="lead text-white">Practical insights for a greener world.</p>
           <Button variant="success" size="lg">Learn More</Button>
-        </Stack>
+        </Col>
+      </Row>
 
-        {/* Content Highlights */}
-        <Stack direction="horizontal" gap={3}>
-          {['Renewable Energy', 'Eco-Friendly Tech', 'Sustainable Living'].map((topic, idx) => (
-            <Card className="text-center" key={idx} style={{ flex: 1 }}>
+      {/* Content Highlights */}
+      <Row className="g-4">
+        {/* Featured Articles */}
+        {[
+          { title: 'AI Revolution', description: 'Discover how AI is transforming industries and everyday life.' },
+          { title: 'Quantum Computing', description: 'An introduction to the next frontier in computational power.' },
+          { title: 'Display Technologies', description: 'Explore the latest advancements in screen technology.' }
+        ].map((topic, idx) => (
+          <Col md={4} key={idx}>
+            <Card className="h-100">
               <Card.Body>
-                <Card.Title>{topic}</Card.Title>
-                <Card.Text>
-                  Short description about {topic.toLowerCase()} and its impact.
-                </Card.Text>
-                <Button variant="outline-success">Read More</Button>
+                <Card.Title>{topic.title}</Card.Title>
+                  <Card.Text>
+                    {topic.description}
+                  </Card.Text>
+                    <Button variant="outline-success">
+                    <Link 
+                      style={{ textDecoration: 'none', color: 'green' }} 
+                      to={`/sustainability/${topic.title.toLowerCase().replace(' ', '')}`}
+                      onMouseEnter={(e) => e.currentTarget.style.color = 'white'}
+                      onMouseLeave={(e) => e.currentTarget.style.color = 'green'}
+                    >
+                      Read More
+                    </Link>
+                  </Button>
               </Card.Body>
             </Card>
-          ))}
-        </Stack>
+          </Col>
+        ))}
+      </Row>
 
-      </Stack>
+ 
     </Container>
   );
-}
+};
 
 export default SustainabilityPage;
