@@ -16,7 +16,6 @@ function App() {
         <Route path='/technology/airevolution' element={<AiRevolutionPage/>}/>
         <Route path="/sustainability" element={<SustainabilityPage/>}/>
         <Route path="/movements" element={<MovementsPage/>}/>
-        <Route path="*" element={<Navigate to="/home" replace />} />
       </Routes>
     </Layout>
   );
