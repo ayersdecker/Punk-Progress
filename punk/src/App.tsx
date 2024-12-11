@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
 import './App.css';
 import Layout from './components/layout/layout';
 import HomePage from './pages/home';
@@ -16,6 +16,7 @@ function App() {
         <Route path='/technology/airevolution' element={<AiRevolutionPage/>}/>
         <Route path="/sustainability" element={<SustainabilityPage/>}/>
         <Route path="/movements" element={<MovementsPage/>}/>
+        <Route path="*" element={<Navigate to="/home" replace />} />
       </Routes>
     </Layout>
   );

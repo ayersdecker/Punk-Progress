@@ -4,7 +4,7 @@ import logo from '../../assets/img/pplogo.png';
 import '../../App.css';
 import TechnologyPage from '../../pages/technology';
 import Layout from './layout';
-import {Link, Outlet, Route} from 'react-router-dom';
+import {Link, Navigate, Outlet, Route} from 'react-router-dom';
 import HomePage from '../../pages/home';
 
 

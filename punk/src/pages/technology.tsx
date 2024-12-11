@@ -26,28 +26,41 @@ const TechnologyPage: React.FC = () => {
           { title: 'Cybersecurity', description: 'Protecting data in a digital world.' },
         ].map((topic, idx) => (
           <Col md={4} key={idx}>
-        <Card className="h-100">
-          <Card.Body>
-            <Card.Title>{topic.title}</Card.Title>
-            <Card.Text>
-          {topic.description}
-            </Card.Text>
-            <Button variant="outline-primary">
-            <Link 
-              style={{textDecoration: 'none'}} 
-              to={`/technology/${topic.title.toLowerCase().replace(' ', '')}`} 
-              onMouseEnter={(e) => e.currentTarget.style.color = 'white'}
-              onMouseLeave={(e) => e.currentTarget.style.color = '#0d6efd'}>
-              Read More
-            </Link>
-          </Button>
-          </Card.Body>
-        </Card>
+            <Card className="h-100 card-hover" style={{ background: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)', border: 'none', boxShadow: '0 0 10px 0 rgba(255, 255, 255, 0.5)', animation: 'glow 10s infinite' }}>
+              <Card.Body>
+                <Card.Title className="text-white">{topic.title}</Card.Title>
+                <Card.Text className="text-white">
+                  {topic.description}
+                </Card.Text>
+                <Button variant="outline-primary">
+                  <Link 
+                    style={{ textDecoration: 'none', color: '#0d6efd' }} 
+                    to={`/technology/${topic.title.toLowerCase().replace(' ', '')}`} 
+                    onMouseEnter={(e) => e.currentTarget.style.color = 'white'}
+                    onMouseLeave={(e) => e.currentTarget.style.color = '#0d6efd'}>
+                    Read More
+                  </Link>
+                </Button>
+              </Card.Body>
+            </Card>
+
+            <style>{`
+              @keyframes glow {
+                0% { box-shadow: 0 0 10px 0 rgba(255, 0, 0, 0.5); }
+                25% { box-shadow: 0 0 10px 0 rgba(0, 255, 0, 0.5); }
+                50% { box-shadow: 0 0 10px 0 rgba(0, 0, 255, 0.5); }
+                75% { box-shadow: 0 0 10px 0 rgba(255, 255, 0, 0.5); }
+                100% { box-shadow: 0 0 10px 0 rgba(255, 0, 255, 0.5); }
+              }
+
+              .card-hover:hover {
+                transform: translate(-10px, -10px);
+                transition: transform 0.3s;
+              }
+            `}</style>
           </Col>
         ))}
       </Row>
-
- 
     </Container>
   );
 };
