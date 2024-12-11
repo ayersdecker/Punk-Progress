@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Punk-Progress/static/css/main.9ece6963.css",
-    "main.js": "/Punk-Progress/static/js/main.199c36fe.js",
+    "main.css": "/Punk-Progress/static/css/main.db9f8d10.css",
+    "main.js": "/Punk-Progress/static/js/main.b8f75281.js",
     "static/js/453.e31ce6f5.chunk.js": "/Punk-Progress/static/js/453.e31ce6f5.chunk.js",
     "static/media/pplogo.png": "/Punk-Progress/static/media/pplogo.5537f6e3d260b2cb336b.png",
     "static/media/aiface.png": "/Punk-Progress/static/media/aiface.f96a41811ea74540e5a5.png",
     "index.html": "/Punk-Progress/index.html",
-    "main.9ece6963.css.map": "/Punk-Progress/static/css/main.9ece6963.css.map",
-    "main.199c36fe.js.map": "/Punk-Progress/static/js/main.199c36fe.js.map",
+    "main.db9f8d10.css.map": "/Punk-Progress/static/css/main.db9f8d10.css.map",
+    "main.b8f75281.js.map": "/Punk-Progress/static/js/main.b8f75281.js.map",
     "453.e31ce6f5.chunk.js.map": "/Punk-Progress/static/js/453.e31ce6f5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ece6963.css",
-    "static/js/main.199c36fe.js"
+    "static/css/main.db9f8d10.css",
+    "static/js/main.b8f75281.js"
   ]
 }
